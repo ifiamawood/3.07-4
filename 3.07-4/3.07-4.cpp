@@ -17,7 +17,7 @@ int main()
 	cap >> input;
 	cv::Sobel(input, output1,CV_16SC1 , 1, 0, 3, 1, 0, BORDER_DEFAULT);
 	cv::Sobel(input, output2, CV_16SC1, 0, 1, 3, 1, 0, BORDER_DEFAULT);
-	convertScaleAbs(output1,output11);
+	convertScaleAbs(output1,output11); 
 	convertScaleAbs(output2, output22);
 	imshow("xÒ»½×", output11);
 	waitKey(0);
